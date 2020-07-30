@@ -1,13 +1,15 @@
 package testpackage;  
+import static org.testng.AssertJUnit.assertEquals;
 import java.util.concurrent.TimeUnit;  
 import org.openqa.selenium.WebDriver;  
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;  
 import org.testng.annotations.BeforeTest;  
 import org.testng.annotations.Test;  
 public class MavenTest1 {  
 public String baseUrl = "http://www.google.com/";  
-String driverPath = "D:\\SB00561518\\TECHM\\IEDriverServer_Win32_3.150.1\\IEDriverServer.exe";  
+String driverPath = "IEDriverServer.exe";  
 public WebDriver driver ;   
 @Test             
 public void test() {      
@@ -22,7 +24,9 @@ driver.get(baseUrl);
 String URL= driver.getCurrentUrl();  
 System.out.print(URL);  
 //get the title of the page  
-String title = driver.getTitle();                  
+String title = driver.getTitle(); 
+String expectedtitle = "Google";
+Assert.assertEquals(title,expectedtitle);
 System.out.println(title);  
 }     
 @BeforeTest  
