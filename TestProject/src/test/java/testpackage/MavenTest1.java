@@ -25,11 +25,11 @@ driver.get(baseUrl1);
 String URL= driver.getCurrentUrl();  
 System.out.print(URL);  
 //get the title of the page  
-String title = driver.getTitle(); 
-String expectedtitle = "Google";
-Assert.assertEquals(title,expectedtitle);
-System.out.println(title);  
-}  
+String title1 = driver.getTitle(); 
+String expectedtitle1 = "Google";
+Assert.assertEquals(title1,expectedtitle1);
+System.out.println(title1);  
+}     
 @Test
 public void twingo() {      
 	// set the system property for internet explorer driver      
@@ -43,10 +43,10 @@ public void twingo() {
 	String URL= driver.getCurrentUrl();  
 	System.out.print(URL);  
 	//get the title of the page  
-	String title = driver.getTitle(); 
-	String expectedtitle = "TWINGO";
-	Assert.assertEquals(title,expectedtitle);
-	System.out.println(title);  
+	String title2 = driver.getTitle(); 
+	String expectedtitle2 = "TWINGO";
+	Assert.assertEquals(title2,expectedtitle2);
+	System.out.println(title2);  
 	}     
 @BeforeTest  
 public void beforeTest() {    
