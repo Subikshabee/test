@@ -12,7 +12,7 @@ public String baseUrl1 = "http://www.google.com/";
 public String baseUrl2 = "https://twingo.techmahindra.com/";  
 String driverPath = "IEDriverServer.exe";  
 public WebDriver driver ;   
-@Test             
+@Test(enabled=false)            
 public void test() {      
 // set the system property for internet explorer driver      
 System.setProperty("webdriver.ie.driver", driverPath);  
