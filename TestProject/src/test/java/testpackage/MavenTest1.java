@@ -29,7 +29,8 @@ String title = driver.getTitle();
 String expectedtitle = "Google";
 Assert.assertEquals(title,expectedtitle);
 System.out.println(title);  
-}     
+}  
+@Test
 public void twingo() {      
 	// set the system property for internet explorer driver      
 	System.setProperty("webdriver.ie.driver", driverPath);  
