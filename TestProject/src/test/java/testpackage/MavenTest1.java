@@ -44,7 +44,7 @@ public void twingo() {
 	System.out.print(URL);  
 	//get the title of the page  
 	String title2 = driver.getTitle(); 
-	String expectedtitle2 = "TWINGO";
+	String expectedtitle2 = "Sign in to your account";
 	Assert.assertEquals(title2,expectedtitle2);
 	System.out.println(title2);  
 	}     
